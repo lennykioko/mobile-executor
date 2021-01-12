@@ -45,14 +45,14 @@ router.get('/accounts', asyncHandler(async (req, res) => {
 
 // POST trade info from UI
 router.post('/trade', asyncHandler(async (req, res) => {
-    const info = await req.body.trade;
+    const info = await req.body;
     const prevTrade = await records.getTrade();
 
     if(info.symbol != prevTrade.symbol && info.slPrice != prevTrade.slPrice){
       records.deletePrevTrade();
       let trade = await records.createTrade(info);
       trade = await records.updateTradeStatus("Received from UI");
-      res.json(trade);
+      res.json({ ...trade, message: "successful submission"});
     } else {
       res.json({message: "Trade already exists"});
     }

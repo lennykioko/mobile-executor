@@ -1,5 +1,5 @@
 {
-  "name": "mobile-executor-backend",
+  "name": "mobex-server",
   "version": "1.0.0",
   "private": true,
   "scripts": {

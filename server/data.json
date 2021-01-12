@@ -1,0 +1,25 @@
+{
+  "trade": {
+    "password": "tc39",
+    "symbol": "",
+    "orderType": "buy",
+    "slPrice": "1.22",
+    "tpPrice": "1.45",
+    "pendingOrderPrice": "",
+    "status": "Received from UI"
+  },
+  "currencies": [
+    "USDJPY",
+    "AUDUSD",
+    "NZDUSD",
+    "EURUSD",
+    "USDCHF",
+    "GBPUSD",
+    "USDCAD"
+  ],
+  "accounts": {
+    "1284457": {
+      "riskDollars": "30"
+    }
+  }
+}
